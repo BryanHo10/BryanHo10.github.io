@@ -48,7 +48,7 @@ function draw(){
   rect(x1, y1, 50, 50);
   rect(x1, y2, 50, 50);
   rect(x1, y3, 50, 50);
-  if(x1<=0)
+  if(x1<=-50)
   	x1=width-50;
   if(x1==x+70&&y1==y)
   {
