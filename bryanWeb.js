@@ -52,7 +52,7 @@ function draw(){
   	x1=width-50;
   if(x1==x+70&&y1==y)
   {
-  	alert("game over");
+  //	alert("game over");
   }
   
 
