@@ -1,4 +1,4 @@
-var x=100;
+var x=200;
 var y=300;
 var jump=0;
 var bottom=true;
@@ -19,7 +19,7 @@ function draw(){
   var start=width-50;
   background(200);
   fill(color(39,199,191));
-  rect(500, y, 50, 50);
+  rect(x, y, 50, 50);
   y+=jump;
   if(y==h)
   	jump=10;
@@ -31,16 +31,20 @@ function draw(){
   if(keyIsDown(LEFT_ARROW))
   {
   	x-=speed;
+  	if(x<=0)
+  		x=0;
   }
   if(keyIsDown(RIGHT_ARROW))
   {
   	x+=speed;
+  	if(x>=width-50)
+  		x=wideth-50;
   }  
   fill(0);
   x1-=speed;
   x2-=speed;
   rect(x1, y1, 50, 50);
-  //rect(-500, y1, 50, 50);
+ // rect(0, y1, 50, 50);
   rect(x2, y1, 50, 50);
   if(x1<=-50)
   {
