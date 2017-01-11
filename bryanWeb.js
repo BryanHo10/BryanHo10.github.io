@@ -19,7 +19,7 @@ function draw(){
   var start=width-50;
   background(200);
   fill(color(39,199,191));
-  rect(x, y, 50, 50);
+  rect(500, y, 50, 50);
   y+=jump;
   if(y==h)
   	jump=10;
@@ -40,6 +40,7 @@ function draw(){
   x1-=speed;
   x2-=speed;
   rect(x1, y1, 50, 50);
+  //rect(-500, y1, 50, 50);
   rect(x2, y1, 50, 50);
   if(x1<=-50)
   {
@@ -51,14 +52,14 @@ function draw(){
   }
   if(x1<=x+40&&x1+50>=x&&y1<=y+40)
   {
-  	alert("game over /n Score="+count);
+  	alert("game over \n Score="+count);
   	count=0;
   	x1=start;
   	x2=start+500;
   }
   else if(x2<=x+40&&x2+50>=x&&y1<=y+40)
   {
-  	alert("game over /n Score="+count);
+  	alert("game over \n Score="+count);
   	count=0;
   	x1=start;
   	x2=start+500;
