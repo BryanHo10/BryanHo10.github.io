@@ -9,10 +9,12 @@ var x2=x1+500;
 var y1=300;
 var count=0;
 var speed=10;
+var speedX=10;
 
 function setup(){
 
   createCanvas(1080, 400);
+  alert("LEFT_ARROW = Left \nRIGHT_ARROW = Right \nSPACE = Jump");
 }
 
 function draw(){
@@ -38,12 +40,13 @@ function draw(){
   {
   	x+=speed;
   	if(x>=width-50)
-  		x=wideth-50;
+  		x=width-60;
   }  
   fill(0);
-  x1-=speed;
-  x2-=speed;
+  x1-=speedX;
+  x2-=speedX;
   rect(x1, y1, 50, 50);
+  //rect(500,0,10,400);
  // rect(0, y1, 50, 50);
   rect(x2, y1, 50, 50);
   if(x1<=-50)
@@ -80,6 +83,12 @@ function keyPressed()
 		count++;
 		//alert(b+"  "+h);
 	}
+	if(keyCode===80&&speedX>0)
+	{
+		speedX=0;
+	}
+	else if(keyCode===80)
+		speedX=10;
 
 }
 
