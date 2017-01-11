@@ -1,13 +1,14 @@
-var x=30;
+var x=100;
 var y=300;
 var jump=0;
 var bottom=true;
 var h=150;
 var b=300;
 var x1=1080;
+var x2=x1+500;
 var y1=300;
-var y2=200;
-var y3=100;
+var count=0;
+var speed=10;
 
 function setup(){
 
@@ -15,44 +16,52 @@ function setup(){
 }
 
 function draw(){
+  var start=width-50;
   background(200);
   fill(color(39,199,191));
   rect(x, y, 50, 50);
-  /*y+=jump;
+  y+=jump;
   if(y==h)
   	jump=10;
   if(y==b)
   {
   		jump=0;
   		bottom=true;
-  }*/
+  }
   if(keyIsDown(LEFT_ARROW))
   {
-  	x-=10;
+  	x-=speed;
   }
   if(keyIsDown(RIGHT_ARROW))
   {
-  	x+=10;
-  }
-  if(keyIsDown(UP_ARROW))
-  {
-  	y-=10;
-  }
-  if(keyIsDown(DOWN_ARROW))
-  {
-  	y+=10;
-  }
-  
+  	x+=speed;
+  }  
   fill(0);
-  x1-=10;
+  x1-=speed;
+  x2-=speed;
   rect(x1, y1, 50, 50);
-  rect(x1, y2, 50, 50);
-  rect(x1, y3, 50, 50);
+  rect(x2, y1, 50, 50);
   if(x1<=-50)
-  	x1=width-50;
-  if(x1==x+70&&y1==y)
   {
-  //	alert("game over");
+  	x1=start;
+  }
+  if(x2<=-50)
+  {
+  	x2=start+500;
+  }
+  if(x1<=x+40&&x1+50>=x&&y1<=y+40)
+  {
+  	alert("game over /n Score="+count);
+  	count=0;
+  	x1=start;
+  	x2=start+500;
+  }
+  else if(x2<=x+40&&x2+50>=x&&y1<=y+40)
+  {
+  	alert("game over /n Score="+count);
+  	count=0;
+  	x1=start;
+  	x2=start+500;
   }
   
 
@@ -63,7 +72,9 @@ function keyPressed()
 	{
 		jump=-10;
 		bottom=false;
+		count++;
 		//alert(b+"  "+h);
 	}
 
 }
+
