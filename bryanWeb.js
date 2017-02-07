@@ -123,7 +123,7 @@ function draw()
 fill(col,255,255);
 noStroke();
 col+=5;
-if(col>=100)
+if(col>=255)
   col=0;
 ellipse(mouseX,mouseY,29,29);
 }
