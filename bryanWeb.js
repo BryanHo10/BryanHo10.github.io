@@ -1,94 +1,133 @@
-var x=200;
-var y=300;
-var jump=0;
-var bottom=true;
-var h=150;
-var b=300;
-var x1=1080;
-var x2=x1+500;
-var y1=300;
-var count=0;
-var speed=10;
-var speedX=10;
+// var x1,x2,x3,y1,y2,y3;
+// var increment=0;
+// var lft=0;
+// var rght=0;
+// var angles;
+// var a=0;
+// var b=0;
+// var mouseA,hyp,mouse1,mouse2;
+// var par=[];
 
-function setup(){
 
-  createCanvas(1080, 400);
-  alert("LEFT_ARROW = Left \nRIGHT_ARROW = Right \nSPACE = Jump");
-}
 
-function draw(){
-  var start=width-50;
-  background(200);
-  fill(color(39,199,191));
-  rect(x, y, 50, 50);
-  y+=jump;
-  if(y==h)
-  	jump=10;
-  if(y==b)
-  {
-  		jump=0;
-  		bottom=true;
-  }
-  if(keyIsDown(LEFT_ARROW))
-  {
-  	x-=speed;
-  	if(x<=0)
-  		x=0;
-  }
-  if(keyIsDown(RIGHT_ARROW))
-  {
-  	x+=speed;
-  	if(x>=width-50)
-  		x=width-60;
-  }  
-  fill(0);
-  x1-=speedX;
-  x2-=speedX;
-  rect(x1, y1, 50, 50);
-  //rect(500,0,10,400);
- // rect(0, y1, 50, 50);
-  rect(x2, y1, 50, 50);
-  if(x1<=-50)
-  {
-  	x1=start;
-  }
-  if(x2<=-50)
-  {
-  	x2=start+500;
-  }
-  if(x1<=x+40&&x1+50>=x&&y1<=y+40)
-  {
-  	alert("game over \n Score="+count);
-  	count=0;
-  	x1=start;
-  	x2=start+500;
-  }
-  else if(x2<=x+40&&x2+50>=x&&y1<=y+40)
-  {
-  	alert("game over \n Score="+count);
-  	count=0;
-  	x1=start;
-  	x2=start+500;
-  }
+// function setup(){
+
+//   createCanvas(400,400);
+//   //background(0,0,0);
+//   x1=0;
+//   y1=-15;
+//   x2=-10;
+//   y2=5;
+//   x3=10;
+//   y3=y2;
+//   angles=0;
+//   for(var i=0;i<50;i++)
+//   {
+//   par[i]=
+//   {
+//   x:random(-width/2,width/2),
+//   y:random(-height/2,height/2),
+//    display:function()
+//  { fill(0);
+//   stroke(255);
+//   rect(this.x,this.y,28,28);
+//  },
+//   move:function()
+//   {
+//     this.x=this.x+random(-1,1);
+//     this.y=this.y+random(-1,1);
+//   }
+
+  
+// }
+//   }
+
+
+// }
+
+// function draw(){
+
+//   translate(width/2,height/2);
+//   //rotate(PI/2);
+//   // mouse1=-(mouseX-width/2);
+//   // mouse2=-(mouseY-height/2);
+//   // hyp=(sqrt((mouse1*mouse1)+(mouse2*mouse2)));
+//   // mouseA=-acos(mouse1/hyp);
+  
+//  // console.log(mouse2+ " , "+mouse1);
+//   push();
+//   background(0,0,0);
+//   for(var i=0;i<50;i++)
+//   {
+//   par[i].display();
+//   par[i].move();
+//   }
+//   rotate(angles);
+
+//   angles+=increment;
+  
+//   fill(0);
+//   stroke(255);
+//   triangle(x1,y1,x2,y2,x3,y3);
+
+//   pop();
+//   fill(color(b,255,255));
+  
+//   a+=0.1;
+//   b+=0.5;
+//   if(a>=255)
+//     a=0;
+//   if(b>=255)
+//     b=0;
+  
+  
   
 
+// }
+// function keyReleased()
+// {
+// increment=0;
+// return false;
+// }
+// function keyPressed()
+// {
+//   if(keyCode==LEFT_ARROW)
+//   {
+// lft=1;
+// increment=-0.1;
+//   }
+//   if(keyCode==RIGHT_ARROW)
+//   {
+// rght=1;
+// increment=0.1;
+//   }
+//   // if(keyCode==UP_ARROW)
+//   // {
+//   //   y1--;
+//   //   y2--;
+//   //   y3--;
+//   // }
+// }
+var x,y;
+var col=1;
+function setup(){
+  createCanvas(800,800);
+  background(0,0,0);
+  colorMode(HSB);
 }
-function keyPressed()
+function draw()
 {
-	if(keyCode===32&&bottom)
-	{
-		jump=-10;
-		bottom=false;
-		count++;
-		//alert(b+"  "+h);
-	}
-	if(keyCode===80&&speedX>0)
-	{
-		speedX=0;
-	}
-	else if(keyCode===80)
-		speedX=10;
+  if(mouseIsPressed)
+  {
 
+fill(col,255,255);
+noStroke();
+col+=5;
+if(col>=100)
+  col=0;
+ellipse(mouseX,mouseY,29,29);
 }
 
+
+
+}
