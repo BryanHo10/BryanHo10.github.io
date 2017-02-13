@@ -108,26 +108,61 @@
 //   //   y3--;
 //   // }
 // }
-var x,y;
+var a,r,x,y;
+var n=0;
+var c=8;
 var col=1;
+var inc=1;
+var a1,r1,x1,y1;
+n1=0;
 function setup(){
-  createCanvas(800,800);
-  background(0,0,0);
-  colorMode(HSB);
+createCanvas(1200,800);
+angleMode(DEGREES);
+colorMode(HSB);
+background(0);
 }
-function draw()
-{
-  if(mouseIsPressed)
+function draw(){
+  a=n*137.5;
+  r=c*sqrt(n);
+  x=r*cos(a)+width/2;
+  y=r*sin(a)+height/2;
+
+  // a1=n1*137.5;
+  // r1=c*sqrt(n1);
+  // x1=r1*cos(a1)+width/2;
+  // y1=r1*sin(a1)+height/2;
+
+  // a1=n*(137.5+90);
+  
+  // x1=r*cos(a1)+width/2;
+  // y1=r*sin(a1)+height/2;
+  // a2=n*(137.5+180);
+  
+  // x2=r*cos(a2)+width/2;
+  // y2=r*sin(a2)+height/2;
+  if(n1==0)
   {
+    col=r%255;
+    if(col>=254)
+      n1=1;
+  }
+  
+  else{
+    col=255-r%255;
+    if(255-r%255<=2)
+      n1=0;
+  }
+  fill(r%335,col,151);
+  noStroke();
+  ellipse(x,y,8,8);
+  // fill(r%325,col,151)
+  // ellipse(x1,y1,8,8);
+ // ellipse(x1,y1,8,8);
 
-fill(col,255,255);
-noStroke();
-col+=5;
-if(col>=255)
-  col=0;
-ellipse(mouseX,mouseY,29,29);
-}
-
-
+  n++;
+  // if(n%3==0)
+  // {
+  //   n1++;
+  // }
 
 }
