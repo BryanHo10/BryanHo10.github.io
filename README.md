@@ -1,3 +1,3 @@
-#Bryan Ho
-[BryanHo10.github.io] (bryanho10.github.io)
+# Bryan Ho
+[BryanHo10.github.io](http://bryanho10.github.io/)
 
