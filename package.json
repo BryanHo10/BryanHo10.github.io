@@ -1,0 +1,30 @@
+{
+  "name": "cbcoc-web",
+  "private": true,
+  "description": "Reconstructing local church website into a single page application using React",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "gatsby": "^2.8.2",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "reactstrap": "^7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BryanHo10/cbcoc-web"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
