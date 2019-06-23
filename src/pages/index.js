@@ -1,36 +1,20 @@
 import React from "react"
-import Toolbar from "../components/toolbar"
-import FooterNav from "../components/footerNav"
-import JumbotronHome from "../components/home/jumbotron-home"
-import VisionHome from "../components/home/vision-home"
-import EventHome from "../components/home/event-home"
-import ServiceHome from "../components/home/service-home"
-import SermonHome from "../components/home/sermon-home"
-import ReactHelmet from "../components/head"
+
+import Jumbotron from "../components/Page_Components/jumbotron"
+import ReactHelmet from "../components/Page_Components/head"
+import Toolbar from "../components/Page_Components/ToolBar";
 
 
 export default ({location}) => (
 
   <div>
-    {console.log(location)}
+    
     <ReactHelmet
-            tabTitle={"CBCOC"}
+            tabTitle={"Home"}
     />
     {/* <p>Such wow. Very React.</p> */}
-    <Toolbar
-      isSolid={false}
-    />
-    <JumbotronHome
-        image="church.png"
-    />
-    <VisionHome/>
-    <ServiceHome/>
-    <EventHome
-      image="event-test.png"
-    />
-    <SermonHome
-      image="bible.png"
-    />
-    <FooterNav/>
+    <Toolbar/>
+    <Jumbotron/>
+    
   </div>
 )
