@@ -1,8 +1,9 @@
 import React from "react"
 
-import Jumbotron from "../components/Page_Components/jumbotron"
+import QuoteBanner from "../components/Page_Components/QuoteBanner"
 import ReactHelmet from "../components/Page_Components/head"
 import Toolbar from "../components/Page_Components/ToolBar";
+import Footer from "../components/Page_Components/Footer";
 
 
 export default ({location}) => (
@@ -14,7 +15,8 @@ export default ({location}) => (
     />
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar/>
-    <Jumbotron/>
+    <QuoteBanner/>
+    <Footer/>
     
   </div>
 )

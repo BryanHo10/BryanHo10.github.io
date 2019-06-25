@@ -1,4 +1,6 @@
 /* Include Minified Bootstrap Library */
 @import url("./bootstrap.css");
 /* Include Web Fonts */
-@import url("./fonts/fonts.css")
+@import url("./fonts/fonts.css");
+
+@import url("./home.css");

@@ -1,0 +1,38 @@
+
+:root{
+    --mainBlue:#679289;
+}
+/* ToolBar Styling */
+#site_marker{
+    font-size:22px;
+    padding-left:50px;
+}
+
+#logo_img{
+    width: 50px;
+    height: auto;
+    
+}
+#top_navi{
+    padding-top:18px;
+    font-size: 24px;
+    width:75%;
+}
+
+/* Banner Styling */
+#home_banner{
+    width:100%;
+    height:10%;
+    border:2px solid var(--mainBlue);
+}
+
+/* Footer Styling */
+#crosswalk_verse{
+    font-size: 25px;
+    width:75%;
+}
+#foot_navi{
+    padding-top:18px;
+    font-size: 24px;
+    width:100%;
+}

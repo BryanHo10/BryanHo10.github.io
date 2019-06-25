@@ -9,18 +9,22 @@ class Toolbar extends React.Component {
   
   render() {
     return (
-      <div className="border">
+      <div>
           <div className="row">
-              <div className="col-sm">
-                    <img src={withPrefix("/img/cross_home.png")}></img>
-                    <h1>CrossWalk</h1>
+              <div id="site_marker" className="col-sm-6 border">
+                    <span className="border px-2">
+                      <img id="logo_img" className="py-2" src={withPrefix("img/cross_home.png")}/>
+                      </span>
+                      <span className="border">
+                        CrossWalk
+                    </span>
               </div>
-              <div className="col-sm">
-                  <span>
+              <div className="col-sm-6">
+                <div id="top_navi" className="ml-auto border" >
                     <Link>Home</Link>
-                    <Link>Blog</Link>
+                    <Link className="px-5">Blog</Link>
                     <Link>Contact</Link>
-                  </span>
+                  </div>
               </div>
           </div>
       
