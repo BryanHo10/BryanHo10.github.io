@@ -10,8 +10,8 @@ class QuestionsAnswers extends React.Component{
     render(){
         return(
             <div>
-                <p id="home-question" className="border">Where's your Question?</p>
-                <p id="home-answer" className="border">This is my Answer</p>
+                <p id="home_question" className="border">Where's your Question?</p>
+                <p id="home_answer" className="border">This is my Answer</p>
             </div>
 
         );

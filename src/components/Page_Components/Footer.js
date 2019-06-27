@@ -9,11 +9,11 @@ class Footer extends React.Component {
   
   render() {
     return (
-      <div id="footer-container" className="m-auto container-fluid">
+      <div id="footer_container" className="m-auto container-fluid">
           <div className="row">
               <div id="site_marker" className="col-sm-4">
                     <span className="px-2">
-                      <img id="logo_img" className="py-2" src={withPrefix("img/cross_home.png")}/>
+                      <img id="foot_logo_img" className="py-2" src={withPrefix("img/cross_home.png")}/>
                       </span>
                       <span>
                         CrossWalk

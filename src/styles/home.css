@@ -9,7 +9,7 @@
 }
 
 #logo_img{
-    width: 50px;
+    width: 45px;
     height: auto;
     
 }
@@ -23,17 +23,19 @@
 #home_banner{
     width:100%;
     height:10%;
+    padding-top: 3%;
+    padding-left: 4%;
     border-top:1.5px solid var(--mainBlue);
     border-bottom:1.5px solid var(--mainBlue);
 }
-#quote-start{
+#quote_start{
 
 }
-#quote-end{
-
+#quote_end{
+    padding-left:50px;
 }
-#quote-author{
-
+#quote_author{
+    text-align: right;
 }
 
 /* Footer Styling */
@@ -43,16 +45,21 @@
 }
 #foot_navi{
     
-    padding-top:18px;
+    padding-top:3%;
     padding-bottom: 10px;
     font-size: 18px;
     width:100%;
 }
-#footer-container{
+#footer_container{
+    padding-top: 18px;
     border-top:1px solid var(--mainBlue);
 }
+#foot_logo_img{
+    width: 65px;
+    height: auto;
+}
 /* Home Page */
-#side-marker{
+#side_marker{
     width:50px;
     border:3px solid var(--mainBlue);
     background-color:  var(--mainBlue);
@@ -60,13 +67,13 @@
     color:var(--mainBlue);
     height:100%;
 }
-#page-left-bound{
+#page_left_bound{
     width:250px;
     border-top:3px solid var(--mainblue);
 }
-#home-question{
+#home_question{
 
 }
-#home-answer{
+#home_answer{
 
 }

@@ -12,8 +12,8 @@ class HomeWrapper extends React.Component{
         return(
             <div className="container-fluid">
                 <div className="row">
-                        <div id="page-left-bound" style={{width:"220px", borderTop:"3px solid var(--mainblue)"}}>
-                            <div  id="side-marker" className="ml-auto">
+                        <div id="page_left_bound" style={{width:"220px", borderTop:"3px solid var(--mainblue)"}}>
+                            <div  id="side_marker" className="ml-auto">
                             </div>
                         </div>
                     <div className="col-sm p-5">
