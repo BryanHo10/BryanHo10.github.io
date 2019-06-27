@@ -9,13 +9,13 @@ class QuoteBanner extends React.Component {
   
   render() {
     return (
-      <div id="home_banner">
+      <div id="home_banner" className="container-fluid">
         <div>
-            <h2>Nothing in my hands I bring,</h2>
-            <h2>Simply to Thy cross I cling</h2>
+            <h2 id="quote-start">Nothing in my hands I bring,</h2>
+            <h2 id="quote-end">Simply to Thy cross I cling</h2>
         </div>
         <div>
-            <h3>- Augstus Toplady</h3>
+            <h3 id="quote-author" className="ml-auto border">- Augstus Toplady</h3>
         </div>
       </div>
     );

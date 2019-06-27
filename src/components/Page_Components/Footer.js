@@ -9,13 +9,13 @@ class Footer extends React.Component {
   
   render() {
     return (
-      <div>
+      <div id="footer-container" className="m-auto container-fluid">
           <div className="row">
-              <div id="site_marker" className="col-sm-4 border">
-                    <span className="border px-2">
+              <div id="site_marker" className="col-sm-4">
+                    <span className="px-2">
                       <img id="logo_img" className="py-2" src={withPrefix("img/cross_home.png")}/>
                       </span>
-                      <span className="border">
+                      <span>
                         CrossWalk
                     </span>
               </div>
@@ -28,20 +28,22 @@ class Footer extends React.Component {
                     </p>
                 </div>
               </div>
-              <div id="foot_navi" className="row" >
-                    <div className="col-sm-4">
-                        <Link>Home</Link>
-                    </div>
-                    <div className="col-sm-4 m-auto">
-                        <Link>Blog</Link>
-                    </div>
-                    <div className="col-sm-4">
-                        <Link>Contact</Link>
-                    </div>
+          </div>
+
+          <div id="foot_navi" className="row m-auto" >
+                <div className="col-sm text-center">
+                    <Link>Home</Link>
+                </div>
+                <div className="col-sm  text-center">
+                    <Link>Blog</Link>
+                </div>
+                <div className="col-sm text-center">
+                    <Link>Contact</Link>
                 </div>
           </div>
-      
       </div>
+      
+      
     );
   }
 }
