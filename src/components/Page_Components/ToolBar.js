@@ -22,9 +22,9 @@ class Toolbar extends React.Component {
               <div className="col-md pt-1">
                 <div id="top_navi" className=" ml-auto text-center">
                   <span>
-                      <Link>Home</Link>
-                      <Link className="px-5">Blog</Link>
-                      <Link>Contact</Link>
+                      <Link to="/">Home</Link>
+                      <Link to="/blog" className="px-5">Blog</Link>
+                      <Link to="/contact">Contact</Link>
                     </span>
                   </div>
               </div>

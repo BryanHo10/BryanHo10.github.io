@@ -36,13 +36,13 @@ class Footer extends React.Component {
 
           <div id="foot_navi" className="row m-auto" >
                 <div className="col-sm text-center">
-                    <Link>Home</Link>
+                    <Link to="/">Home</Link>
                 </div>
                 <div className="col-sm  text-center">
-                    <Link>Blog</Link>
+                    <Link to="/blog">Blog</Link>
                 </div>
                 <div className="col-sm text-center">
-                    <Link>Contact</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
           </div>
       </div>

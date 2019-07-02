@@ -2,12 +2,14 @@
 :root{
     --mainBlue:#679289;
     --lightGray:#707070;
+    --darkBlue:#071e22;
 
 }
 /* ToolBar Styling */
 #site_marker{
     font-size:22px;
     padding-left:50px;
+    color:var(--darkBlue);
 }
 
 #logo_img{
@@ -19,6 +21,10 @@
     padding-top:18px;
     font-size: 18px;
     width:75%;
+}
+#top_navi > span{
+    color:var(--darkBlue);
+    text-decoration: none;
 }
 
 /* Banner Styling */
@@ -34,18 +40,18 @@
 }
 #quote_container{
     padding-left:8%;
-    font-size:1.75em;
+    font-size:1.5em;
 }
 #quote_start{
-    font-size:1.75em;
+    font-size:1.5em;
 }
 #quote_end{
-    font-size:1.75em;
-    padding-left:80px;
+    font-size:1.5em;
+    padding-left:150px;
 }
 #quote_author{
     text-align: right;
-    padding-right:25%;
+    padding-right:20%;
     padding-bottom:16px;
 }
 
@@ -98,4 +104,8 @@
 /* Classes */
 .control-font{
     font-size: 1.75em;
+}
+/* 404 Page */
+#error_page{
+    height:80%;
 }
