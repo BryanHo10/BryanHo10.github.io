@@ -1,6 +1,8 @@
 
 :root{
     --mainBlue:#679289;
+    --lightGray:#707070;
+
 }
 /* ToolBar Styling */
 #site_marker{
@@ -27,15 +29,24 @@
     padding-left: 4%;
     border-top:1.5px solid var(--mainBlue);
     border-bottom:1.5px solid var(--mainBlue);
+    color:var(--lightGray);
+    font-style:italic;
+}
+#quote_container{
+    padding-left:8%;
+    font-size:1.75em;
 }
 #quote_start{
-
+    font-size:1.75em;
 }
 #quote_end{
-    padding-left:50px;
+    font-size:1.75em;
+    padding-left:80px;
 }
 #quote_author{
     text-align: right;
+    padding-right:25%;
+    padding-bottom:16px;
 }
 
 /* Footer Styling */
@@ -46,7 +57,7 @@
 #foot_navi{
     
     padding-top:3%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 18px;
     width:100%;
 }
@@ -75,5 +86,16 @@
 
 }
 #home_answer{
+    padding-left:5%;
+    width:65%;
+    font-style:italic;
+}
+#home_content{
+    padding-left:5%;
+    color:var(--lightGray);
+}
 
+/* Classes */
+.control-font{
+    font-size: 1.75em;
 }

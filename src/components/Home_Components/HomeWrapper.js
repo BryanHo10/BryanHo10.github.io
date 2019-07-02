@@ -1,5 +1,6 @@
 import React from "react"
 import QuestionsAnswers from "./QuestionsAnswers.js";
+import HomeQA from "../../storage/home-text.json"
 
 class HomeWrapper extends React.Component{
     constructor(props){
@@ -17,15 +18,16 @@ class HomeWrapper extends React.Component{
                             </div>
                         </div>
                     <div className="col-sm p-5">
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
-                        <QuestionsAnswers/>
+                        {
+                            HomeQA.map(questionAnswer=>{
+                                return(
+                                    <QuestionsAnswers
+                                        question={questionAnswer.question}
+                                        answer={questionAnswer.answer}                                        
+                                    />
+                                );
+                            })
+                        }
                     </div>
 
                 </div>

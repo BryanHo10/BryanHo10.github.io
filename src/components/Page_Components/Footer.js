@@ -25,7 +25,11 @@ class Footer extends React.Component {
                     For God did not send his Son into the world to condemn
                     the world, but in order that the world might be saved
                     through him.  
+                      <p className="text-right">
+                        -John 3:17
+                      </p>
                     </p>
+                    
                 </div>
               </div>
           </div>
