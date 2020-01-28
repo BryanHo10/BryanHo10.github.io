@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-           Built by Bryan Ho
+        <footer className="float-right">
+        © {new Date().getFullYear()} Bryan Ho
         </footer>
       </div>
     </>

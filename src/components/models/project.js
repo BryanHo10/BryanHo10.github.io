@@ -9,15 +9,26 @@ import {
 const Project = ({ projTitle,projURL,projDesc,projDate }) => (
 
     <div
-      className="border"
+      className="py-2"
     >
       <Card>
-        <CardHeader>{projTitle}</CardHeader>
+        <CardHeader>
+          <span className="h5 text-muted">{projTitle}</span>
+          <span className="float-right">
+            <Link
+              to="/"
+            >
+              <Button size="sm">
+                More info
+              </Button>
+            </Link>
+          </span>
+        </CardHeader>
         <CardBody>
-          <CardSubtitle>{projDate}</CardSubtitle>
-          <CardText>{projDesc}</CardText>
+          <CardSubtitle className="text-muted">{projDate}</CardSubtitle>
+          <CardText className="lead">{projDesc}</CardText>
         </CardBody>
-        <CardFooter>{projURL}</CardFooter>
+        <CardFooter className="h6"><a href={projURL} className="text-info">{projURL}</a></CardFooter>
       </Card>
     </div>
 
