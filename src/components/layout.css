@@ -1,5 +1,8 @@
+/* Include font css */
+@import url("../styles/fonts/fonts.css");
+
 html {
-  font-family: sans-serif;
+  font-family: Roboto-Regular;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
