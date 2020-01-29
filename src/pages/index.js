@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
-
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Project from "../components/models/project"
-import { Jumbotron, Button, ListGroup } from 'reactstrap';
+import { Jumbotron, Button, ListGroup, Form, FormGroup, Label, Input, FormText, Row, Col } from 'reactstrap';
 import Experience from "../components/models/experience";
 
 const IndexPage = () => (
@@ -24,6 +24,19 @@ const IndexPage = () => (
               <br/>
               <span className="text-muted h5">California State University of Fullerton</span>
               <br/>
+              <div className="pt-3">
+                <a href="https://github.com/BryanHo10">
+                  <FaGithub color="gray" size="1.3em"/>
+                </a>
+                <span className="px-2"></span>
+                <a href="https://www.linkedin.com/in/bryan-ho-10/">
+                  <FaLinkedin color="gray" size="1.3em"/>
+                </a>
+                <span className="px-2"></span>
+                <a href="mailto:bryankho1010@gmail.com">
+                  <FaEnvelope color="gray" size="1.3em"/>
+                </a>
+              </div>
             </p>
           </div>
           <hr className="my-2" />
@@ -68,30 +81,61 @@ const IndexPage = () => (
           />
         </ListGroup>
       </div>
-      <h2>
+      <h2 className="pb-1">
         Projects
       </h2>
-      <Project 
-        projTitle="USFMToolSharp"
-        projDate="June 2019"
-        projURL="https://github.com/WycliffeAssociates/USFMToolsSharp"
-        projDesc="Toolkit to convert USFM to other file formats."
-        projLang={["C#"]}
-      />
-      <Project 
-        projTitle="Programming Assignment Web Interface"
-        projDesc="Application for professors to modify or add assignments from Github Organization"
-        projDate="September 2019"
-        projLang={["React"]}
-      />
-      
-      <Project 
-        projTitle="Google Course Calendar"
-        projDesc="Chrome extension to import CSUF course schedules with Google Calendars."
-        projDate="August 2018"  
-        projURL="https://github.com/CSUF-ACM/course-calendar"
-        projLang={["JS","HTML"]}
-      />
+      <div className="pl-4">
+        <Project 
+          projTitle="USFMToolSharp"
+          projDate="June 2019"
+          projURL="https://github.com/WycliffeAssociates/USFMToolsSharp"
+          projDesc="Toolkit to convert USFM to other file formats."
+          projLang={["C#"]}
+        />
+        <Project 
+          projTitle="Programming Assignment Web Interface"
+          projDesc="Application for professors to modify or add assignments from Github Organization"
+          projDate="September 2019"
+          projLang={["React"]}
+        />
+        
+        <Project 
+          projTitle="Google Course Calendar"
+          projDesc="Chrome extension to import CSUF course schedules with Google Calendars."
+          projDate="August 2018"  
+          projURL="https://github.com/CSUF-ACM/course-calendar"
+          projLang={["JS","HTML"]}
+        />
+      </div>
+    <h2 className="py-2">
+      Contact Me
+    </h2>
+    <div className="pl-4">
+        <Form
+          action="https://formspree.io/xvoaoawl"
+          method="POST"
+        >
+            <Row form>
+              <Col md={6}>
+                <FormGroup>
+                  <Input type="text" name="name" placeholder="Name" className="col-md"/>
+                </FormGroup>
+              </Col>
+              <Col md={6}>
+                <FormGroup>
+                  <Input type="email" name="_replyto" id="exampleEmail" placeholder="Email" className="col-md" />
+                </FormGroup>
+              </Col>
+            </Row>
+              <FormGroup>
+                <Input type="text" name="_subject" id="subject" placeholder="Subject"/>      
+              </FormGroup>
+              <FormGroup>
+                <Input type="textarea" name="message" id="exampleText" placeholder="Message" rows={6}/>
+              </FormGroup>
+            <Button type="submit" className="px-3" color="secondary">Send Message</Button>
+        </Form>
+    </div>
     </Layout>
 )
 

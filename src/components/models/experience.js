@@ -4,12 +4,16 @@ import React from "react"
 import {
   ListGroup,ListGroupItem,ListGroupItemHeading,ListGroupItemText
 } from 'reactstrap';
+import { FaBriefcase } from "react-icons/fa";
 
 const Experience = ({ workTitle, workComp, workLoc, workDesc, workDate }) => (
         <ListGroupItem>
             <ListGroupItemHeading>
+                <FaBriefcase color="gray"/>
+                <span className="px-2"></span>
                 {workTitle} <span className="float-right text-muted"><h5>{workDate}</h5></span>
                 <br/>
+                
                 <h6 className="text-muted pt-2">{workComp}</h6>
                 <hr/>
             </ListGroupItemHeading>

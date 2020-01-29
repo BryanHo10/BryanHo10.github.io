@@ -5,6 +5,7 @@ import {
   Card, CardHeader, CardText, CardBody,
   CardSubtitle, CardFooter, Button, Badge
 } from 'reactstrap';
+import { FaCode } from "react-icons/fa";
 
 const Project = ({ projTitle,projURL,projDesc,projDate,projLang }) => (
 
@@ -14,6 +15,8 @@ const Project = ({ projTitle,projURL,projDesc,projDate,projLang }) => (
       <Card>
         <CardHeader>
           <span className="h5 text-muted">
+            <FaCode color="gray"/>
+            <span className="px-2"></span>
             {projTitle} 
             {projLang.map((elem)=>{
               let colorChoice = "secondary";
@@ -57,7 +60,7 @@ const Project = ({ projTitle,projURL,projDesc,projDate,projLang }) => (
           <CardSubtitle className="text-muted">{projDate}</CardSubtitle>
           <CardText className="lead">{projDesc}</CardText>
         </CardBody>
-        <CardFooter className="h6"><a href={projURL} className="text-info">{projURL}</a></CardFooter>
+        <CardFooter className="h6"><a href={projURL} className="text-muted">{projURL}</a></CardFooter>
       </Card>
     </div>
 
