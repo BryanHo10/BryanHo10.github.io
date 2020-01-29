@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main style={{paddingTop:`3em`}}>{children}</main>
         <footer className="float-right">
         © {new Date().getFullYear()} Bryan Ho
         </footer>

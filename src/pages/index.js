@@ -4,16 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Project from "../components/models/project"
-import { Jumbotron, Button, ListGroup, Form, FormGroup, Label, Input, FormText, Row, Col } from 'reactstrap';
+import { Jumbotron, Button, ListGroup, Form, FormGroup, Input,Row, Col } from 'reactstrap';
 import Experience from "../components/models/experience";
 
 const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
-      <div>
+      <div id="_Home">
         <Jumbotron>
           <div className="row">
             <img src={withPrefix("/profile.png")} style={{ maxHeight: `200px`, maxWidth:`200px`, marginBottom: `1.45rem`}} className="col-md-3"/>
@@ -53,7 +52,7 @@ const IndexPage = () => (
         </Jumbotron>
       </div>
       <div className="py-2">
-        <h2 className="pb-1">
+        <h2 className="pb-1" id="_Work">
           Work Experience
         </h2>
         <ListGroup>
@@ -81,7 +80,7 @@ const IndexPage = () => (
           />
         </ListGroup>
       </div>
-      <h2 className="pb-1">
+      <h2 className="pb-1" id="_Project">
         Projects
       </h2>
       <div className="pl-4">
@@ -107,7 +106,7 @@ const IndexPage = () => (
           projLang={["JS","HTML"]}
         />
       </div>
-    <h2 className="py-2">
+    <h2 className="py-2" id="_Contact">
       Contact Me
     </h2>
     <div className="pl-4">
