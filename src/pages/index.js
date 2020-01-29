@@ -27,8 +27,16 @@ const IndexPage = () => (
             </p>
           </div>
           <hr className="my-2" />
-
-          <p>Work in Progress, but this is me.</p>
+          <div>
+            <p className="h4">
+              Languages &amp; Tools
+            </p>
+              <span className="text-muted h6">Proficient in C++, C#, Javascript, and Git </span>
+              <br/>
+              <span className="text-muted h6">Familiar with Java, Python, and SQL</span>
+              
+          </div>
+          
         </Jumbotron>
       </div>
       <div className="py-2">
@@ -39,15 +47,24 @@ const IndexPage = () => (
           <Experience
             workTitle="Software Development Intern"
             workComp="Wycliffe Associates"
-            workDesc={["asdfa","zxcv","qwer"]}
-            workDate="June 2019"
+            workDesc={[
+              "Worked on creating an open-licensed file conversion tool for improving translation processing.",
+              "Constructed unit tests on an existing codebase that produced over 80% code coverage.",
+              "Assisted in writing TravisCI scripts to automate the deployment process through Github.",
+              "Implemented and debugged custom workflows within CRM built upon Dynamics 365."
+            ]}
+            workDate="June 2019 – August 2019"
             workLoc="Orlando, Florida"
           />
           <Experience
-            workTitle="Software Development Intern"
-            workComp="Wycliffe Associates"
-            workDesc={["asdfa","zxcv","qwer"]}
-            workDate="June 2019"
+            workTitle="Instructional Student Assistant"
+            workComp="California State University of Fullerton"
+            workDesc={[
+              "Explain introductory programming concepts in C++ to over 100 students",
+              "Organized coursework scores and grades with Microsoft Excel improving efficiency by 50%.",
+              "Create original programming assignments with test scripts along with 4 colleagues"
+            ]}
+            workDate="August 2018 – Present"
           />
         </ListGroup>
       </div>
@@ -59,11 +76,22 @@ const IndexPage = () => (
         projDate="June 2019"
         projURL="https://github.com/WycliffeAssociates/USFMToolsSharp"
         projDesc="Toolkit to convert USFM to other file formats."
+        projLang={["C#"]}
       />
-      <Project projTitle="Programming Assignment Web Interface"
-      projDesc="Application for professors to modify or add assignments from Github Organization"/>
-      <Project projTitle="Google Course Calendar"
-      projDesc="Chrome extension to import CSUF course schedules with Google Calendars."/>
+      <Project 
+        projTitle="Programming Assignment Web Interface"
+        projDesc="Application for professors to modify or add assignments from Github Organization"
+        projDate="September 2019"
+        projLang={["React"]}
+      />
+      
+      <Project 
+        projTitle="Google Course Calendar"
+        projDesc="Chrome extension to import CSUF course schedules with Google Calendars."
+        projDate="August 2018"  
+        projURL="https://github.com/CSUF-ACM/course-calendar"
+        projLang={["JS","HTML"]}
+      />
     </Layout>
 )
 
