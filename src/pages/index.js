@@ -10,9 +10,9 @@ import { Jumbotron, Button, ListGroup, Form, FormGroup, Input,Row, Col } from 'r
 import Experience from "../components/models/experience";
 
 const IndexPage = () => (
-    <Layout>
+    <Layout id="_Home">
       <SEO title="Home" />
-      <div id="_Home">
+      <div >
         <Jumbotron>
           <div className="row">
             <img src={withPrefix("/profile.png")} style={{ maxHeight: `200px`, maxWidth:`200px`, marginBottom: `1.45rem`}} className="col-md-3"/>
@@ -48,11 +48,10 @@ const IndexPage = () => (
               <span className="text-muted h6">Familiar with Java, Python, and SQL</span>
               
           </div>
-          
         </Jumbotron>
       </div>
-      <div className="py-2">
-        <h2 className="pb-1" id="_Work">
+      <div className="py-2" id="_Work">
+        <h2 className="pb-1">
           Work Experience
         </h2>
         <ListGroup>
@@ -106,7 +105,8 @@ const IndexPage = () => (
           projLang={["JS","HTML"]}
         />
       </div>
-    <h2 className="py-2" id="_Contact">
+      <span id="_Contact"></span>
+    <h2 className="py-2">
       Contact Me
     </h2>
     <div className="pl-4">

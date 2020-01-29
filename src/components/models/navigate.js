@@ -9,14 +9,14 @@ const Navigate = ({ navInfo }) => {
 
     return(
         <div>
-            <Navbar style={{background: `#636363`}} dark expand="md">
-                <NavbarToggler onClick={toggle} dark className="white" />
-                <Collapse isOpen={isOpen} dark navbar>
-                    <Nav className="mr-auto" navbar>
+            <Navbar style={{background: `#636363`}} dark expand="md" className="align-bottom">
+                <NavbarToggler onClick={toggle} dark  />
+                <Collapse isOpen={isOpen} dark navbar className="align-bottom">
+                    <Nav className="mr-auto align-bottom" navbar>
                         {Object.keys(navInfo).map((id)=>{
                             return(
                                 <NavItem>
-                                    <NavLink href={"#"+id} className="text-white pr-5"><span className="h5">{navInfo[id]}</span></NavLink>
+                                    <NavLink href={"#"+id} className="text-white pr-5 align-bottom"><span className="h5">{navInfo[id]}</span></NavLink>
                                 </NavItem>
                             )
                         })}
