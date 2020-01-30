@@ -15,8 +15,8 @@ const Navigate = ({ navInfo }) => {
                     <Nav className="mr-auto align-bottom" navbar>
                         {Object.keys(navInfo).map((id)=>{
                             return(
-                                <NavItem>
-                                    <NavLink href={"#"+id} className="text-white pr-5 align-bottom"><span className="h5">{navInfo[id]}</span></NavLink>
+                                <NavItem className="pr-5">
+                                    <NavLink href={"#"+id} className="text-white"><span id="navLink" className="h5">{navInfo[id]}</span></NavLink>
                                 </NavItem>
                             )
                         })}

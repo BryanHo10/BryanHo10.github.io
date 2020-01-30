@@ -25,15 +25,15 @@ const IndexPage = () => (
               <br/>
               <div className="pt-3">
                 <a href="https://github.com/BryanHo10">
-                  <FaGithub color="gray" size="1.3em"/>
+                  <FaGithub size="1.3em" id="icon_social"/>
                 </a>
                 <span className="px-2"></span>
                 <a href="https://www.linkedin.com/in/bryan-ho-10/">
-                  <FaLinkedin color="gray" size="1.3em"/>
+                  <FaLinkedin size="1.3em" id="icon_social"/>
                 </a>
                 <span className="px-2"></span>
                 <a href="mailto:bryankho1010@gmail.com">
-                  <FaEnvelope color="gray" size="1.3em"/>
+                  <FaEnvelope size="1.3em" id="icon_social"/>
                 </a>
               </div>
             </p>
@@ -84,7 +84,7 @@ const IndexPage = () => (
       </h2>
       <div className="pl-4">
         <Project 
-          projTitle="USFMToolSharp"
+          projTitle="Conversion Toolkit for USFM"
           projDate="June 2019"
           projURL="https://github.com/WycliffeAssociates/USFMToolsSharp"
           projDesc="Toolkit to convert USFM to other file formats."
