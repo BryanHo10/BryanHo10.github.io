@@ -19,9 +19,9 @@ const IndexPage = () => (
             <p className="h4 px-3">
               Bryan Ho
               <br/>
-              <span className="text-muted h5">Software Developer</span>
+              <span className="text-muted h5">Software Engineer</span>
               <br/>
-              <span className="text-muted h5">California State University of Fullerton</span>
+              <span className="text-muted h5">Alignment Healthcare</span>
               <br/>
               <div className="pt-3">
                 <a href="https://github.com/BryanHo10">
@@ -55,6 +55,17 @@ const IndexPage = () => (
           Work Experience
         </h2>
         <ListGroup>
+        <Experience
+            workTitle="Front End Engineer Intern"
+            workComp="Alignment Healthcare"
+            workDesc={[
+              "Rebuilt front-end with Vue.js from existing survey mobile app for additional configurations.",
+              "Implemented RESTful API with .NET Core to store responses into an Azure CosmosDB instance.",
+              "Designed custom React components with Redux state management to implement responsive forms.",
+            ]}
+            workDate="Februrary 2020 – May 2020"
+            workLoc="Orange, California"
+          />
           <Experience
             workTitle="Software Development Intern"
             workComp="Wycliffe Associates"
@@ -71,11 +82,11 @@ const IndexPage = () => (
             workTitle="Instructional Student Assistant"
             workComp="California State University of Fullerton"
             workDesc={[
-              "Explain introductory programming concepts in C++ to over 100 students",
+              "Explained introductory programming concepts in C++ to over 100 students",
               "Organized coursework scores and grades with Microsoft Excel improving efficiency by 50%.",
-              "Create original programming assignments with test scripts along with 4 colleagues"
+              "Created original programming assignments with test scripts along with 4 colleagues"
             ]}
-            workDate="August 2018 – Present"
+            workDate="August 2018 – May 2020"
           />
         </ListGroup>
       </div>
