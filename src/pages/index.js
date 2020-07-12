@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa';
 import Project from "../components/models/project"
 import { Jumbotron, Button, ListGroup, Form, FormGroup, Input,Row, Col } from 'reactstrap';
 import Experience from "../components/models/experience";
+import {FacebookShareButton} from "react-share"
 
 const IndexPage = () => (
     <Layout id="_Home">
@@ -35,6 +36,13 @@ const IndexPage = () => (
                 <a href="mailto:bryankho1010@gmail.com">
                   <FaEnvelope size="1.3em" id="icon_social"/>
                 </a>
+                <span className="px-2"></span>
+                <FacebookShareButton
+                url="BryanHo10.github.io">
+                  <FaFacebook size="1.3em" id="icon_social"/>
+                </FacebookShareButton>
+
+
               </div>
             </p>
           </div>
